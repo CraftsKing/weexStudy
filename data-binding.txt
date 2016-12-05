@@ -1,4 +1,5 @@
 data-binding in weex
+
 view上使用还是{{}}，双大括号。
 关键在大括号里面可以有变量的一些运算，{{firstName + ' ' + lastName}}、style="font-size: {{title.size}}" 大括号的位置也随心所欲
 绑定数据的路径：data-properties或者computed-properties;后者可以放更多的逻辑。
