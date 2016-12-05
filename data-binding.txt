@@ -1,0 +1,9 @@
+data-binding in weex
+view上使用还是{{}}，双大括号。
+关键在大括号里面可以有变量的一些运算，{{firstName + ' ' + lastName}}、style="font-size: {{title.size}}" 大括号的位置也随心所欲
+绑定数据的路径：data-properties或者computed-properties;后者可以放更多的逻辑。
+一个坑：NOTE: data and methods can't have duplicated fields. 'Cause in the execution context -- this, we can access both of them.
+element的if属性相当于ng-show;repeat<>ng-repeat;
+一个坑：改变数组时需要使用$set(index, item)，否则不会更新view
+vm.items.length = 0也不会更新view；应该使用vm.items = []
+static attribute can cancel the data binding, and the data changes will not be synchronized to UI.
